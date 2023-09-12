@@ -1,11 +1,11 @@
 import json as json_module
 import graphviz
 
-_pagejointransition_file_path = '.\data\PageState_Join_PageTransition.txt'
 _pagestates_file_path = '.\data\PageStates.txt'
 _pagetransitions_file_path = '.\data\PageTransitions.txt'
 _state_output_file_path = '.\data\state-output.json'
 _transition_output_file_path = '.\data\\transition-output.json'
+
 
 def create_json_arr(file_path):
     # Read the .txt file
@@ -15,7 +15,7 @@ def create_json_arr(file_path):
     # read each line
     lines = txt_content.split(';')
     result = []
-    field_name_arr = [] 
+    field_name_arr = []
     for i, line in enumerate(lines):
         data_fields = line.split(',')
         if i == 0:
@@ -32,7 +32,8 @@ def create_json_arr(file_path):
                     result.append(json)
                     json = {}
     return result
-            
+
+
 def write_to_json_file(raw_json_arr, file_path):
     # Open a file for writing
     with open(file_path, 'w') as json_file:
@@ -40,18 +41,24 @@ def write_to_json_file(raw_json_arr, file_path):
         json_module.dump(raw_json_arr, json_file, indent=4)
     return json_module.dumps(raw_json_arr)
 
+
 def create_graphviz_file(state_arr, transition_arr):
     dot = graphviz.Digraph()
     for state in state_arr:
         dot.node(state['Id'], state['Title'])
     for transition in transition_arr:
-        dot.edge(transition['StateId'], transition['NextStateId'], transition['EventId'])
+        dot.edge(transition['StateId'],
+                 transition['NextStateId'], transition['EventId'])
     dot.render('graph', view=True)
 
-raw_state_arr = create_json_arr(_pagestates_file_path);
-raw_transition_arr = create_json_arr(_pagetransitions_file_path);
-write_to_json_file(raw_state_arr, _state_output_file_path);
-write_to_json_file(raw_transition_arr, _transition_output_file_path);
-create_graphviz_file(raw_state_arr, raw_transition_arr)
 
-    
+def main():
+    raw_state_arr = create_json_arr(_pagestates_file_path)
+    raw_transition_arr = create_json_arr(_pagetransitions_file_path)
+    write_to_json_file(raw_state_arr, _state_output_file_path)
+    write_to_json_file(raw_transition_arr, _transition_output_file_path)
+    create_graphviz_file(raw_state_arr, raw_transition_arr)
+
+
+if __name__ == "__main__":
+    main()
