@@ -13,8 +13,8 @@ Otherwise, you will need to make alterations to the python script.
 
 ## Dependencies
 
-json library (standard to python)
-graphviz library (link below will help you to install it for your solution)
+- json library (standard to python)
+- graphviz library (link below will help you to install it for your solution)
 
 ## Use GraphViz with Python
 
