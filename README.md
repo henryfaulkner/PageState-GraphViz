@@ -22,4 +22,5 @@ https://www.devtoolsdaily.com/graphviz/python/
 
 ## Graph with Example Data
 
-![Example Registration Flow](./graph-example.pdf)
+[graph-example.pdf](https://github.com/henryfaulkner/PageState-GraphViz/files/13329914/graph-example.pdf)
+
