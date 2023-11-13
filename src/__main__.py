@@ -1,11 +1,11 @@
 import json as json_module
 import graphviz
 
-_pagestates_file_path = '.\data\PageStates.txt'
-_pagetransitions_file_path = '.\data\PageTransitions.txt'
-_state_output_file_path = '.\data\state-output.json'
-_transition_output_file_path = '.\data\\transition-output.json'
-
+_pagestates_file_path = '.\example-data\PageStates.txt'
+_pagetransitions_file_path = '.\example-data\PageTransitions.txt'
+_state_output_file_path = '.\example-data\state-output.json'
+_transition_output_file_path = '.\example-data\\transition-output.json'
+_graph_pdf = 'example-graph'
 
 def create_json_arr(file_path):
     # Read the .txt file
@@ -49,7 +49,7 @@ def create_graphviz_file(state_arr, transition_arr):
     for transition in transition_arr:
         dot.edge(transition['StateId'],
                  transition['NextStateId'], transition['EventId'])
-    dot.render('graph', view=True)
+    dot.render(_graph_pdf, view=True)
 
 
 def main():

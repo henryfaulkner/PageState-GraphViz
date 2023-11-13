@@ -1,0 +1,47 @@
+[
+    {
+        "Id": "1",
+        "PageUrl": "login",
+        "Title": "Login"
+    },
+    {
+        "Id": "2",
+        "PageUrl": "user-info",
+        "Title": "User Info"
+    },
+    {
+        "Id": "3",
+        "PageUrl": "set-password",
+        "Title": "Set Password"
+    },
+    {
+        "Id": "4",
+        "PageUrl": "mobile-number",
+        "Title": "Mobile Number"
+    },
+    {
+        "Id": "5",
+        "PageUrl": "contact-confirmation",
+        "Title": "Contact Confirmation"
+    },
+    {
+        "Id": "6",
+        "PageUrl": "confirm-email",
+        "Title": "Email Code Confirm"
+    },
+    {
+        "Id": "7",
+        "PageUrl": "confirm-mobile",
+        "Title": "Mobile Code Confirm"
+    },
+    {
+        "Id": "8",
+        "PageUrl": "change-email",
+        "Title": "Change Email"
+    },
+    {
+        "Id": "9",
+        "PageUrl": "change-mobile",
+        "Title": "Change Mobile"
+    }
+]
