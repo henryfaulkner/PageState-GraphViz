@@ -1,8 +1,8 @@
 [
     {
         "Id": "1",
-        "PageUrl": "login",
-        "Title": "Login"
+        "PageUrl": "home",
+        "Title": "Home"
     },
     {
         "Id": "2",
@@ -11,37 +11,37 @@
     },
     {
         "Id": "3",
-        "PageUrl": "set-password",
-        "Title": "Set Password"
+        "PageUrl": "captcha",
+        "Title": "Captcha Validation"
     },
     {
         "Id": "4",
-        "PageUrl": "mobile-number",
-        "Title": "Mobile Number"
-    },
-    {
-        "Id": "5",
         "PageUrl": "contact-confirmation",
         "Title": "Contact Confirmation"
     },
     {
-        "Id": "6",
+        "Id": "5",
         "PageUrl": "confirm-email",
         "Title": "Email Code Confirm"
     },
     {
-        "Id": "7",
+        "Id": "6",
         "PageUrl": "confirm-mobile",
         "Title": "Mobile Code Confirm"
     },
     {
-        "Id": "8",
+        "Id": "7",
         "PageUrl": "change-email",
         "Title": "Change Email"
     },
     {
-        "Id": "9",
+        "Id": "8",
         "PageUrl": "change-mobile",
         "Title": "Change Mobile"
+    },
+    {
+        "Id": "9",
+        "PageUrl": "set-password",
+        "Title": "Set Password"
     }
 ]

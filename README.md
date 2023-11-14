@@ -22,5 +22,4 @@ https://www.devtoolsdaily.com/graphviz/python/
 
 ## Graph with Example Data
 
-[graph-example.pdf](https://github.com/henryfaulkner/PageState-GraphViz/files/13329914/graph-example.pdf)
-
+[graph-example.pdf](./graph-example.pdf)

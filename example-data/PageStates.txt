@@ -1,1 +1,1 @@
-Id,PageUrl,Title;1,login,Login;2,user-info,User Info;3,set-password,Set Password;4,mobile-number,Mobile Number;5,contact-confirmation,Contact Confirmation;6,confirm-email,Email Code Confirm;7,confirm-mobile,Mobile Code Confirm;8,change-email,Change Email;9,change-mobile,Change Mobile;
+Id,PageUrl,Title;1,home,Home;2,user-info,User Info;3,captcha,Captcha Validation;4,contact-confirmation,Contact Confirmation;5,confirm-email,Email Code Confirm;6,confirm-mobile,Mobile Code Confirm;7,change-email,Change Email;8,change-mobile,Change Mobile;9,set-password,Set Password;

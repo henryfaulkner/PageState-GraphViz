@@ -43,7 +43,7 @@ def write_to_json_file(raw_json_arr, file_path):
 
 
 def create_graphviz_file(state_arr, transition_arr):
-    dot = graphviz.Digraph()
+    dot = graphviz.Digraph(graph_attr={'rankdir':'LR'})
     for state in state_arr:
         dot.node(state['Id'], state['Title'])
     for transition in transition_arr:
